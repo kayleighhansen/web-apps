@@ -34,7 +34,7 @@ header {
 }
 
 main {
-    margin: 3% 25%;
+    margin: 3% 15%;
 }
 
 footer {
@@ -54,6 +54,7 @@ footer {
 
 .button-content {
     margin-top: 100px;
+    margin-bottom: 50px;
 }
 
 .fa-home:before {
@@ -113,25 +114,12 @@ ul li:hover {
 input[type="text"] {
     padding: 5px 10px;
     font-size: 20px;
-    width: 100%;
+    width: 90%;
 }
 
 ul li.checked {
     background: #888;
     color: #fff;
     text-decoration: line-through;
-  }
+}
   
-  /* Add a "checked" mark when clicked on */
-  ul li.checked::before {
-    content: '';
-    position: absolute;
-    border-color: #fff;
-    border-style: solid;
-    border-width: 0 2px 2px 0;
-    top: 10px;
-    left: 16px;
-    transform: rotate(45deg);
-    height: 15px;
-    width: 7px;
-  }
