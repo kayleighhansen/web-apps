@@ -35,12 +35,13 @@ header {
 
 main {
     margin: 3% 15%;
+    margin-bottom: 100px;
 }
 
 footer {
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
     background-color: #2a9d8f;
@@ -109,6 +110,10 @@ ul li:hover {
 
 .checklist-form-submit {
     padding: 0px 20px;
+}
+
+.car-colors {
+    display:flex;
 }
 
 input[type="text"] {
