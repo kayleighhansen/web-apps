@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Call It In | Broken Cars</title>
-    <link rel="stylesheet" href="../static/css/mobile.css">
+    <link rel="stylesheet" href="../../static/css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -22,4 +22,35 @@
 </body>
 
 <script src="../static/snippets/footer.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyAWl6AN8aXgoU89KA3BSqzADiH98TkU2I4",
+    authDomain: "call-it-in-2b59e.firebaseapp.com",
+    projectId: "call-it-in-2b59e",
+    storageBucket: "call-it-in-2b59e.appspot.com",
+    messagingSenderId: "308216176979",
+    appId: "1:308216176979:web:7f4fcee470022679d481a6",
+    measurementId: "G-8YLXKEWDTL"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+
+  var db = firebase.firestore();
+
+  db.collection("broken-cars").get().then((querySnapshot) => {
+    querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data()}`);
+    });
+})
+</script>
 </html>
