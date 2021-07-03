@@ -65,7 +65,7 @@ footer {
     padding: 10px 20px;
 }
 
-.submit-btn-div {
+.submit-btn-div, .reload-btn-div {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -75,12 +75,23 @@ footer {
     margin-top: 10px;
 }
 
-.submit-btn {
+.submit-btn, .reload-btn {
     padding: 10px 30px;
     border: 3px solid #264653;
     background-color: white;
     color: black;
     border-radius: 3px;
+}
+
+.title-car-section {
+    color:black;
+    text-align: center;
+}
+
+.finished-doctors-note {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 10%;
 }
 
 ul li:nth-child(odd) {

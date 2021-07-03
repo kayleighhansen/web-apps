@@ -7,6 +7,9 @@
     <title>Call It In | Doctor's Note</title>
     <link rel="stylesheet" href="../../static/css/mobile.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,25 +17,29 @@
     </header>
     <main>
         <form class="doctors-note-form">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value=""><br><br>
+            <label for="fname">First Name:</label><br>
+            <input type="text" id="fname" name="fname" value=""><br>
 
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br><br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" id="lname" name="lname" value=""><br>
+ 
+            <label for="doctor">Doctor's Name:</label><br>
+            <input type="text" id="doctor" name="doctor" value="Dr. "><br>
 
-            <label for="doctor">Doctor's name:</label><br>
-            <input type="text" id="doctor" name="doctor" value=""><br><br>
+            <label for="office">Medical Office Name:</label><br>
+            <input type="text" id="office" name="office" value=""><br>
 
-            <label for="symptom1">Symptoms:</label><br><br>
-            <input type="checkbox" id="symptom1" name="symptom1" value="Fever">
-            <label for="symptom1"> Fever</label><br>
-            <input type="checkbox" id="symptom2" name="symptom2" value="Coughing">
-            <label for="symptom2"> Coughing</label><br>
-            <input type="checkbox" id="symptom3" name="symptom3" value="Nausea">
-            <label for="symptom3"> Neausea</label><br><br>
+            <label for="date">Date:</label><br>
+            <input type="text" id="date" name="date" value=""><br>
 
+            <label for="days">Number of Days off work:</label><br>
+            <input type="text" id="days" name="days" value=""><br>
+
+            <label for="symtoms">Describe Your "Symptoms":</label><br>
+            <input type="text" id="symtoms" name="symtoms" value="My patient is experiencing "><br><br>
+            
             <div class="submit-btn-div">
-                <input type="submit" value="Submit" class="submit-btn" onClick="return empty()">
+                <input type="submit" value="Submit" class="submit-btn">
             </div>
         </form>
 

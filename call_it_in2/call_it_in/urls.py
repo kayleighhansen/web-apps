@@ -25,9 +25,10 @@ urlpatterns = [
     path('home/', views.home),
 
     path('doctor/', views.doctor),
+    path('doctor/submit', views.doctor),
 
     path('excuses/', views.excuses),
 
-     path('cars/', views.cars),
+    path('cars/', views.cars),
 
 ]
