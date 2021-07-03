@@ -27,9 +27,6 @@ document.querySelector(".submit-btn").addEventListener("click", function(event) 
         var illnessDate = document.querySelector("#date").value;
         var illnessDays = document.querySelector("#days").value;
 
-
-
-
         document.querySelector("main").innerHTML = "";
         document.querySelector("main").innerHTML +=
             `<div class="finished-doctors-note">

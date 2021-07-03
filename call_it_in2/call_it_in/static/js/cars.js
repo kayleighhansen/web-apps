@@ -68,9 +68,6 @@ db.collection("broken-cars").get().then((querySnapshot) => {
 });
 
 
-
-
-
 function reload() {
     location.reload();
 }

@@ -25,7 +25,6 @@ urlpatterns = [
     path('home/', views.home),
 
     path('doctor/', views.doctor),
-    path('doctor/submit', views.doctor),
 
     path('excuses/', views.excuses),
 
