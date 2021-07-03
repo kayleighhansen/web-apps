@@ -34,8 +34,8 @@ db.collection("broken-cars").get().then((querySnapshot) => {
                 event.addEventListener("click", function() {
                     console.log("click");
                     document.querySelector("main").innerHTML = "";
-                    document.querySelector("main").innerHTML += `<div><img src="${event.src}" alt="car-img" class="download-this"><br>`;
-                    document.querySelector("main").innerHTML += `<button class="download-img">Download Image</button><div>`;
+                    document.querySelector("main").innerHTML += `<div class="car-detail-div"><img src="${event.src}" alt="car-img" class="download-this"><br></div>`;
+                    document.querySelector("main").innerHTML += `<div class="car-detail-div"><button class="download-img">Download Image</button></div>`;
                     document.querySelector("main").innerHTML += `<div class="reload-btn-div"><button class="reload-btn" onclick="reload()">Back to Cars</button></div>`;
                     console.log(event.src);
 
