@@ -31,7 +31,6 @@ I used VSCode as an IDE.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Mozilla](https://developer.mozilla.org/)
 * [LogRocket](https://blog.logrocket.com/localstorage-javascript-complete-guide/)
 * [Django](https://www.djangoproject.com/start/)
